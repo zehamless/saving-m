@@ -1,6 +1,5 @@
 <div>
-
-    <x-modal wire:model="categoryModal" title="Hello" subtitle="Livewire example" persistent>
+    <x-modal wire:model="categoryModal" title="Sup!" subtitle="Create New Category">
         <x-form no-separator wire:submit="save">
             <x-input required label="Name" icon="o-credit-card" placeholder="Name" wire:model="name" inline/>
             <x-slot:actions>

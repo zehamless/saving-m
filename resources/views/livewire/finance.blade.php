@@ -3,7 +3,7 @@
         <x-slot:actions>
             <x-theme-toggle class="btn btn-circle"/>
             <livewire:create-category/>
-            <livewire:create-finance/>
+            <livewire:create-finance lazy=""/>
         </x-slot:actions>
     </x-header>
 
