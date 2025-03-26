@@ -7,13 +7,13 @@
     </x-header>
 
     <div class="grid grid-cols-2 grid-rows-2 gap-4">
-        <div class="col-start-1 border-2">
+        <div class="col-start-1">
             <livewire:income-chart wire:key="income"/>
         </div>
-        <div class="col-start-1 border-2 row-start-2">
+        <div class="col-start-1 row-start-2">
             <livewire:expense-chart wire:key="expense"/>
         </div>
-        <div class="row-span-2 col-start-2 border-2">
+        <div class="row-span-2 col-start-2 ">
             <livewire:history-table/>
         </div>
     </div>
