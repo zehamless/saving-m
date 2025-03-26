@@ -13,7 +13,7 @@ class HistoryTable extends Component
 {
     use WithPagination, Toast;
 
-    #[On('update')]
+    #[On('update-income'), On('update-expense')]
     public function refreshData()
     {
         $this->resetPage();
