@@ -8,6 +8,7 @@
         {{--        </x-slot:actions>--}}
         <x-slot:actions>
             <x-theme-toggle class="btn btn-circle"/>
+            <livewire:create-finance/>
         </x-slot:actions>
     </x-header>
 
