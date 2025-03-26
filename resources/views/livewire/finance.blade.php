@@ -2,6 +2,7 @@
     <x-header title="Hello" separator progress-indicator>
         <x-slot:actions>
             <x-theme-toggle class="btn btn-circle"/>
+            <livewire:create-category/>
             <livewire:create-finance/>
         </x-slot:actions>
     </x-header>

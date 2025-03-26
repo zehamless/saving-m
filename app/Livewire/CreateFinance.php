@@ -5,6 +5,7 @@ namespace App\Livewire;
 use App\Livewire\Forms\FinanceForm;
 use App\Models\Category;
 use App\Models\Transaction;
+use Livewire\Attributes\On;
 use Livewire\Component;
 use Mary\Traits\Toast;
 
@@ -32,6 +33,7 @@ class CreateFinance extends Component
         }
     }
 
+    #[On('category-update')]
     public function render()
     {
         return view('livewire.create-finance')->with([

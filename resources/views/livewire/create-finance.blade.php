@@ -14,5 +14,5 @@
         </x-form>
     </x-modal>
 
-    <x-button label="Create" class="btn-primary" @click="$wire.modal = true" icon="o-plus-circle"/>
+    <x-button label="Income/Expense" class="btn-primary btn-sm btn-soft" @click="$wire.modal = true" icon="o-plus-circle"/>
 </div>
