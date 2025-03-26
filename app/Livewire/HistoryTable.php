@@ -21,10 +21,14 @@ class HistoryTable extends Component
 
     public function delete(Transaction $id)
     {
-        $event = $id->isIncome ? 'update-income' : 'update-expense';
-        $id->delete();
-        $this->dispatch($event);
-        $this->success('Transaction deleted successfully');
+        try {
+            $event = $id->isIncome ? 'update-income' : 'update-expense';
+            $id->delete();
+            $this->dispatch($event);
+            $this->success('Transaction deleted successfully');
+        } catch (\Exception $e) {
+            $this->error('Failed to delete transaction');
+        }
     }
 
     public function render()
@@ -44,7 +48,7 @@ class HistoryTable extends Component
                         'id' => $transaction->id,
                         'date' => $transaction->date->format('d M Y'),
                         'category' => $transaction->category->name,
-                        'amount' => Number::currency($transaction->amount),
+                        'amount' => Number::currency($transaction->amount, in: "IDR"),
                         'isIncome' => $transaction->isIncome,
                     ];
                 }),
