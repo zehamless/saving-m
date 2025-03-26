@@ -13,10 +13,10 @@
 
     <div class="grid grid-cols-2 grid-rows-2 gap-4">
         <div class="col-start-1 border-2">
-            <livewire:chart-component title="Income" subtitle="Income" :label="$income['labels']" :data="$income['data']"/>
+            <livewire:chart-component :title="$income['total']" subtitle="Income" :label="$income['labels']" :data="$income['data']"/>
         </div>
         <div class="col-start-1 border-2 row-start-2">
-            <livewire:chart-component title="Expense" subtitle="Expense" :label="$expense['labels']" :data="$expense['data']"/>
+            <livewire:chart-component :title="$expense['total']" subtitle="Expense" :label="$expense['labels']" :data="$expense['data']"/>
         </div>
         <div class="row-span-2 col-start-2 border-2">3</div>
     </div>
