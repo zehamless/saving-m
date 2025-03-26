@@ -14,5 +14,5 @@
         </x-form>
     </x-modal>
 
-    <x-button label="Open" @click="$wire.modal = true"/>
+    <x-button label="Create" class="btn-primary" @click="$wire.modal = true"/>
 </div>

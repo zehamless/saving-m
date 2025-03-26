@@ -21,6 +21,7 @@ class CreateFinance extends Component
             $this->form->all()
         );
         $this->modal = false;
+        $this->dispatch('update');
         $this->success('Transaction created successfully');
     }
 
